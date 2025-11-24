@@ -17,6 +17,7 @@
 	"forwardPorts": [6080],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "git config commit.allowEmptyMessage true",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
