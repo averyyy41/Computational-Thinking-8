@@ -1,0 +1,11 @@
+print("Hi lets tell some jokes!")
+print("Ok lets go!")
+print("What did the grape say when it got stepped on?")
+input("")
+print("Nothing! It just let out a little wine!")
+print("lets tell another one")
+print("what happened when the red and blue ship collided at sea?")
+input("")
+print("the crews got marooned!")
+print("ok one more")
+print
