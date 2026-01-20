@@ -29,7 +29,7 @@ for i in range(22):
     x1 += 10
     x2 += 12
     x3 += 14
-    x4 += 5
+    x4 += random.choice(5,5,5,5,5,5,5,16)
 
     t1.goto(x1, y1)
     t2.goto(x2, y2)
@@ -38,7 +38,7 @@ for i in range(22):
 
     window.update()
     time.sleep(0.1)
-#the blue fish wins because 14 is bigger than 10, 12, and 5
+#the blue fish almost always wins because 14 is bigger than 10, 12, and 5 but on the off chance that the green fish wins, it is be 16 is the biggest possible number
 
 # # Section 4 - Winner
 # # TODO - complete the elif for player 2 winning
