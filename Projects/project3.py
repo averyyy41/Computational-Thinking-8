@@ -27,9 +27,13 @@ t4 = create_sprite("fish_4",x4,y4)
 # # TODO - explain here which sprites are faster or slower
 for i in range(22):
     x1 += 10
+    #not higher than 14 or 15 so this one will be slower
     x2 += 12
+    #not higher than 14 or 15 so this one will be slower
     x3 += 14
-    x4 += random.choice(5,5,5,5,5,5,5,16)
+    #this one is usually the fastest but 1 out of 15 times will lose
+    x4 += random.randint(5,15)
+    #usually the slowest but if 15 is picked it will win 
 
     t1.goto(x1, y1)
     t2.goto(x2, y2)
@@ -38,8 +42,7 @@ for i in range(22):
 
     window.update()
     time.sleep(0.1)
-#the blue fish almost always wins because 14 is bigger than 10, 12, and 5 but on the off chance that the green fish wins, it is be 16 is the biggest possible number
-
+# the blue fish is the most likely to win bc 14 is larger than 10 and 12 but if the green fish goes to 15 instead instead of a more common lower number which is a one out of 15 chance, the green fish will win. 
 # # Section 4 - Winner
 # # TODO - complete the elif for player 2 winning
 # # TODO - write another elif for player 3 and player 4
@@ -52,4 +55,4 @@ elif x3 >= x1 and x3 >= x2 and x3 >= x4:
 elif x4 >= x1 and x4 >= x3 and x4 >= x3:
     print("player 4 wins!")
 
-turtle.exitonclick()
+turtle.exit_on_click()
